@@ -1,0 +1,16 @@
+import numpy as np
+import pandas as pd
+features=pd.read_csv("Features data set.csv")
+sales=pd.read_csv("sales data-set.csv")
+stores=pd.read_csv("stores data-set.csv")
+#print(type(features))
+#print("\nFirst 5 elements of features:\n",features.head())
+#print("\nFirst 5 elements of sales:\n",sales.head())
+#print("\nFirst 5 elements of stores:\n",stores.head())
+#print("\nLast 5 elements of features:\n",features.tail())
+#print("\nLast 5 elements of sales:\n",sales.tail())
+#print("\nLastt 5 elements of stores:\n",stores.tail())
+print("Feature :",features.shape)
+print("Sales :",sales.shape)
+print("Stores :",stores.shape)
+features['Date']=pd.to_datetime(features["Date"])
